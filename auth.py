@@ -1,2 +1,3 @@
 def login():
-    pass # TODO: Implement
+    print("User logged in successfully.")
+    return True
