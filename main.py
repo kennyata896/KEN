@@ -7,11 +7,12 @@ from dotenv import load_dotenv
 from modules.voice_engine import KenVoice
 # 🧱 IMPORT THE LEGO BRICK
 from modules.coder import solve_issue_auto
+from config import MODEL_NAME # Import configuration
 
 load_dotenv()
 
 # --- 1. CONFIGURATION ---
-MODEL_NAME = "gemini-flash-latest" 
+# MODEL_NAME is now imported from config.py
 
 # --- 2. KEY MANAGER (Brain's Own Supply) ---
 class KeyManager:
