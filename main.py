@@ -123,7 +123,7 @@ async def main():
     try: pygame.mixer.init()
     except: pass
     
-    await ken.speak("Modular systems online.")
+    await ken.speak("Hey, Ken OS is online and ready.")
 
     loop = asyncio.get_running_loop()
     await asyncio.gather(ear_loop(ken, loop), brain_loop(ken))
