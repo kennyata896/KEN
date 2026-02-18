@@ -1,2 +1,7 @@
-.aider*
+.ken_memory/
+ken_knowledge/
+__pycache__/
+*.wav
+*.mp3
+*.log
 .env
