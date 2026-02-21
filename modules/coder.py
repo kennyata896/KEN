@@ -19,7 +19,7 @@ if not os.getenv("GEMINI_API_KEY"):
     print("⚠️ WARNING: GEMINI_API_KEY not found in environment variables.")
 
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-model = genai.GenerativeModel("gemini-1.5-flash")
+model = genai.GenerativeModel("gemini-2.0-flash")
 
 async def analyze_repo_async(task_description):
     """
@@ -73,16 +73,24 @@ async def analyze_repo_async(task_description):
         print(f"❌ ERROR in Analysis: {e}")
         return []
 
-async def execute_aider_async(target_files, task_description):
-    """
-    Step 2: The Builder.
-    It runs Aider to actually write the code.
-    """
-    print(f"🔧 WORKER: Engaging Aider on {len(target_files)} files...")
+async def execute_aider_async(target_files, task_description, model="gemini/gemini-2.0-flash"):
+    # ... inside your subprocess call ...
+    cmd = [
+        "python", "-m", "aider",
+        "--model", model,  # <-- Make sure it uses the dynamic variable here!
+        "--yes",
+        "--message", task_description
+    ]
     
-    # We run Aider in a separate thread because it is a blocking process
-    # This ensures Ken can still listen/speak while Aider is coding.
-    await asyncio.to_thread(_run_aider_internal, target_files, task_description)
+    # Add the target files to the command
+    cmd.extend(target_files)
+
+    process = await asyncio.create_subprocess_exec(*cmd)
+    await process.wait()
+
+    # CRITICAL: Trigger the fallback if Aider crashes or times out
+    if process.returncode != 0:
+        raise Exception(f"Aider failed to execute with model: {model}")
 
 def _run_aider_internal(target_files, task_description):
     """
@@ -94,7 +102,7 @@ def _run_aider_internal(target_files, task_description):
         
         # 2. Select the Model (Using Gemini Pro for the heavy coding)
         # Note: Ensure you have GEMINI_API_KEY set for Aider as well
-        coder_model = Model("gemini/gemini-1.5-pro")
+        coder_model = Model("gemini/gemini-2.0-flash")
         
         # 3. Create the Coder Instance
         coder = Coder.create(

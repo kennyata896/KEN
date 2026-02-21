@@ -47,7 +47,7 @@ class JobScheduler:
         self.current_status = f"Researching: '{query}'"
         # Researcher is fast/API based, so we just await it (harder to kill mid-stream without complexity)
         try:
-            model = genai.GenerativeModel("gemini-1.5-flash")
+            model = genai.GenerativeModel("gemini-2.5-flash")
             response = await asyncio.to_thread(model.generate_content, query)
             result = response.text
             
@@ -66,7 +66,7 @@ class JobScheduler:
         tool_env["GEMINI_API_KEY"] = self.api_key
         
         # Force Gemini Pro for better coding architecture
-        cmd = ["aider", "--model", "gemini/gemini-1.5-pro", "--yes", "--message", task]
+        cmd = ["aider", "--model", "gemini/gemini-2.5-pro", "--yes", "--message", task]
 
         try:
             self.current_status = f"Coding: '{task}' (Writing code...)"

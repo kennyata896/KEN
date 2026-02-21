@@ -30,7 +30,7 @@ def calculate(expression):
 def ask_gemini_pro(query):
     """Consults Cloud AI for complex knowledge (NOT for editing files)."""
     try:
-        model = genai.GenerativeModel("gemini-1.5-flash")
+        model = genai.GenerativeModel("gemini-2.5-flash")
         response = model.generate_content(query)
         return response.text
     except Exception as e:

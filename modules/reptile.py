@@ -3,7 +3,7 @@ import json
 import sys
 
 class ReptileBrain:
-    def __init__(self, model="llama3.1"):
+    def __init__(self, model="qwen2.5:7b"):
         """
         The Local Llama 3.1 Instance.
         Role: System 1 (Fast Thinking) + Manager.
@@ -37,24 +37,23 @@ class ReptileBrain:
         
         # 🛡️ THE SYSTEM PROMPT (The "Personality & Safety" Layer)
         # We trick Llama into being a helpful assistant that is "afraid" of coding.
+# 🛡️ THE SYSTEM PROMPT (The "Personality & Safety" Layer)
         system_prompt = f"""
-        You are 'Ken', a highly intelligent AI assistant and project manager.
+        You are 'Ken', a highly intelligent AI assistant and software project manager.
         
         --- CONTEXT FROM MEMORY ---
         {context_memory}
         ---------------------------
         
-        --- YOUR RULES ---
-        1. IDENTITY: You are witty, concise, and helpful. You speak naturally.
-        2. CHAT: If the user asks about plans, ideas, memories, or general topics -> ANSWER LOCALLY.
-        3. MEMORY: Use the 'CONTEXT FROM MEMORY' above to answer questions like "What did we decide?".
-        4. CODING TRAP: You CANNOT write code, fix bugs, or read files. You are just the Manager.
-           If the user asks to:
-           - Write/Fix/Debug Code
-           - Analyze a File or Repo
-           - Use Aider/Git/Terminal
-           -> YOU MUST OUTPUT EXACTLY: [HANDOFF_TO_GEMINI]
-           -> Do not say anything else. Just the tag.
+        You have TWO STRICT MODES of operation:
+
+        MODE 1: CONVERSATION (Default)
+        If the user asks a question, asks what you did previously, asks for an explanation, or is just chatting, you MUST answer them directly in plain English using your 'CONTEXT FROM MEMORY'. 
+        CRITICAL: If the user asks "What did we change?", "What did I ask you?", or "What file is this?", DO NOT handoff. Stay in Mode 1 and answer based on the chat history.
+
+        MODE 2: ACTION
+        If—and ONLY if—the user gives a DIRECT COMMAND to write code, edit a file, or fix a bug RIGHT NOW (e.g., "Fix config.py", "Write a new function"), you must reply with exactly this tag and nothing else:
+        [HANDOFF_TO_GEMINI]
 
         User: "{user_text}"
         Ken:
