@@ -103,3 +103,165 @@
 
 # 2026-01-07 10:09:54.228337
 +config.php
+
+# 2026-02-21 23:53:12.972786
++
++        You are an expert AI software engineer. The user has given you a verbal command to edit the codebase.
++        
++        --- RECENT CONVERSATION CONTEXT ---
++        
++[SYSTEM MEMORY: The user commanded 'hello ken, can you add an fibonacci function to the config.py file?'. The AI coding worker executed this change.]
++        
++        --- YOUR EXACT TASK ---
++        The user's direct command is: "hello ken, can you add an fibonacci function to the config.py file?"
++        
++        Execute this task precisely. Do not add unnecessary features.
++        
+
+# 2026-02-21 23:53:12.972786
++
++        You are an expert AI software engineer. The user has given you a verbal command to edit the codebase.
++        
++        --- RECENT CONVERSATION CONTEXT ---
++        
++[SYSTEM MEMORY: The user commanded 'hello ken, can you add an fibonacci function to the config.py file?'. The AI coding worker executed this change.]
++        
++        --- YOUR EXACT TASK ---
++        The user's direct command is: "hello ken, can you add an fibonacci function to the config.py file?"
++        
++        Execute this task precisely. Do not add unnecessary features.
++        
+
+# 2026-02-21 23:54:26.687411
++
++        You are an expert AI software engineer. The user has given you a verbal command to edit the codebase.
++        
++        --- RECENT CONVERSATION CONTEXT ---
++        
++[SYSTEM MEMORY: The user commanded 'hello ken, can you add an fibonacci function to the config.py file?'. The AI coding worker executed this change.]
++User: ken, i don't see an addition function in the config.py file.
++Ken: Ken: Based on our previous conversation, I didn't find any mention of adding a function to `config.py`. Did you perhaps ask me to add one earlier? If so, could you provide more details or context about what you were trying to do?
++[SYSTEM MEMORY: The user commanded 'sorry, i want you to add an fibonacci function to the config.py file.'. The AI coding worker executed this change.]
++        
++        --- YOUR EXACT TASK ---
++        The user's direct command is: "sorry, i want you to add an fibonacci function to the config.py file."
++        
++        Execute this task precisely. Do not add unnecessary features.
++        
+
+# 2026-02-21 23:54:26.687411
++
++        You are an expert AI software engineer. The user has given you a verbal command to edit the codebase.
++        
++        --- RECENT CONVERSATION CONTEXT ---
++        
++[SYSTEM MEMORY: The user commanded 'hello ken, can you add an fibonacci function to the config.py file?'. The AI coding worker executed this change.]
++User: ken, i don't see an addition function in the config.py file.
++Ken: Ken: Based on our previous conversation, I didn't find any mention of adding a function to `config.py`. Did you perhaps ask me to add one earlier? If so, could you provide more details or context about what you were trying to do?
++[SYSTEM MEMORY: The user commanded 'sorry, i want you to add an fibonacci function to the config.py file.'. The AI coding worker executed this change.]
++        
++        --- YOUR EXACT TASK ---
++        The user's direct command is: "sorry, i want you to add an fibonacci function to the config.py file."
++        
++        Execute this task precisely. Do not add unnecessary features.
++        
+
+# 2026-02-21 23:56:25.440036
++
++        You are an expert AI software engineer. The user has given you a verbal command to edit the codebase.
++        
++        --- RECENT CONVERSATION CONTEXT ---
++        
++[SYSTEM MEMORY: The user commanded 'hello ken, can you add an fibonacci function to the config.py file?'. The AI coding worker executed this change.]
++User: ken, i don't see an addition function in the config.py file.
++Ken: Ken: Based on our previous conversation, I didn't find any mention of adding a function to `config.py`. Did you perhaps ask me to add one earlier? If so, could you provide more details or context about what you were trying to do?
++[SYSTEM MEMORY: The user commanded 'sorry, i want you to add an fibonacci function to the config.py file.'. The AI coding worker executed this change.]
++[SYSTEM MEMORY: The user commanded 'hello everyone, nice to meet you.'. The AI coding worker executed this change.]
++        
++        --- YOUR EXACT TASK ---
++        The user's direct command is: "hello everyone, nice to meet you."
++        
++        Execute this task precisely. Do not add unnecessary features.
++        
+
+# 2026-02-21 23:56:25.440036
++
++        You are an expert AI software engineer. The user has given you a verbal command to edit the codebase.
++        
++        --- RECENT CONVERSATION CONTEXT ---
++        
++[SYSTEM MEMORY: The user commanded 'hello ken, can you add an fibonacci function to the config.py file?'. The AI coding worker executed this change.]
++User: ken, i don't see an addition function in the config.py file.
++Ken: Ken: Based on our previous conversation, I didn't find any mention of adding a function to `config.py`. Did you perhaps ask me to add one earlier? If so, could you provide more details or context about what you were trying to do?
++[SYSTEM MEMORY: The user commanded 'sorry, i want you to add an fibonacci function to the config.py file.'. The AI coding worker executed this change.]
++[SYSTEM MEMORY: The user commanded 'hello everyone, nice to meet you.'. The AI coding worker executed this change.]
++        
++        --- YOUR EXACT TASK ---
++        The user's direct command is: "hello everyone, nice to meet you."
++        
++        Execute this task precisely. Do not add unnecessary features.
++        
+
+# 2026-02-22 00:06:30.520551
++
++        You are an expert AI software engineer. The user has given you a verbal command to edit the codebase.
++        
++        --- RECENT CONVERSATION CONTEXT ---
++        
++User: task, whisper, search for assistant. hello, ken. how are you?
++Ken: User: "task, whisper, search for assistant. hello, ken. how are you?"
++
++Ken: Hello! I'm doing well, thanks for asking. How can I assist you today? If you have any specific tasks or questions, feel free to let me know!
++
++If you're looking to test the voice recognition capabilities or need help with something related to code, just give me a command and I'll do my best to help!
++User: hello, ken.
++Ken: Hello! Nice to meet you. I'm Ken, your AI assistant and software project manager. How can I assist you today? If you have any questions or need help with something specific, feel free to let me know!
++
++Since we're starting a conversation, I'll be in CONVERSATION MODE. If at any point you'd like me to take action on a task for you, just give me a direct command and I'll switch to ACTION MODE.
++
++Is there anything particular you need help with
++User: ken, can you tell me what's the role of graph memory?
++Ken: Certainly! In our conversation context, I'm Ken, your AI assistant and software project manager. Let’s address your question about the role of graph memory.
++
++### Role of Graph Memory
++
++Graph memory is a concept that can be applied in various contexts, but based on the context provided by your previous interactions with me (Ken), it seems like you might be referring to how I store and recall information from our conversations or project-related code. However, since we are using ChromaDB for persistent storage of
++[SYSTEM MEMORY: The user commanded 'ken, can you add a fibonacci function to the config.py file?'. The AI coding worker executed this change.]
++        
++        --- YOUR EXACT TASK ---
++        The user's direct command is: "ken, can you add a fibonacci function to the config.py file?"
++        
++        Execute this task precisely. Do not add unnecessary features.
++        
+
+# 2026-02-22 00:06:30.521569
++
++        You are an expert AI software engineer. The user has given you a verbal command to edit the codebase.
++        
++        --- RECENT CONVERSATION CONTEXT ---
++        
++User: task, whisper, search for assistant. hello, ken. how are you?
++Ken: User: "task, whisper, search for assistant. hello, ken. how are you?"
++
++Ken: Hello! I'm doing well, thanks for asking. How can I assist you today? If you have any specific tasks or questions, feel free to let me know!
++
++If you're looking to test the voice recognition capabilities or need help with something related to code, just give me a command and I'll do my best to help!
++User: hello, ken.
++Ken: Hello! Nice to meet you. I'm Ken, your AI assistant and software project manager. How can I assist you today? If you have any questions or need help with something specific, feel free to let me know!
++
++Since we're starting a conversation, I'll be in CONVERSATION MODE. If at any point you'd like me to take action on a task for you, just give me a direct command and I'll switch to ACTION MODE.
++
++Is there anything particular you need help with
++User: ken, can you tell me what's the role of graph memory?
++Ken: Certainly! In our conversation context, I'm Ken, your AI assistant and software project manager. Let’s address your question about the role of graph memory.
++
++### Role of Graph Memory
++
++Graph memory is a concept that can be applied in various contexts, but based on the context provided by your previous interactions with me (Ken), it seems like you might be referring to how I store and recall information from our conversations or project-related code. However, since we are using ChromaDB for persistent storage of
++[SYSTEM MEMORY: The user commanded 'ken, can you add a fibonacci function to the config.py file?'. The AI coding worker executed this change.]
++        
++        --- YOUR EXACT TASK ---
++        The user's direct command is: "ken, can you add a fibonacci function to the config.py file?"
++        
++        Execute this task precisely. Do not add unnecessary features.
++        

@@ -1,0 +1,25 @@
+{
+  "name": "ken_project",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "<div align=\"center\">\r   <h1>🧠 KEN (Cognitive Edge Network)</h1>\r   <p><b>A Privacy-First, Edge-Compute Cognitive Architecture for Developers</b></p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kennyata896/KEN.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kennyata896/KEN/issues"
+  },
+  "homepage": "https://github.com/kennyata896/KEN#readme",
+  "dependencies": {
+    "@runanywhere/core": "^0.18.1",
+    "@runanywhere/llamacpp": "^0.18.1"
+  }
+}

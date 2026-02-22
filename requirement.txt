@@ -1,0 +1,18 @@
+# --- KEN OS Requirements ---
+
+# 1. Core System & Environment
+python-dotenv
+
+# 2. Voice Engine (Local STT & Audio Playback)
+pygame==2.6.1
+faster-whisper
+SpeechRecognition  # Assuming this or PyAudio is used for your mic capture
+
+# 3. Memory & GraphRAG (ChromaDB + Local Execution)
+chromadb
+requests
+networkx  # Common requirement if you are building mathematical graph structures
+
+# 4. Cortex Manager (Autonomous Execution)
+aider-chat>=0.86.1
+google-generativeai  # Required if you switch back to the Gemini fallback loop
